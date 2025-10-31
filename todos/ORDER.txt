@@ -1,0 +1,8 @@
+1-entity
+2-service -jwtService
+3-config -JwtAuthenticationFilter
+    config-securityConfig
+4-repository -userRepository
+service -AuthService
+5-controller-authcontroller
+6-pass test1234!
