@@ -52,7 +52,7 @@ public class SecurityConfig {
     }
 
 
-    // AuthenticationEntryPoint bir kullanıcının kimliğini doğrulamaya çalıştığımızda reddedilirse ve bir exception atmamız gerekirse, atılacak exception bu olur
+    // AuthenticationEntryPoint bir kullanıcının kimliğini doğrulamaya çalıştığımızda reddedilirse ve bir exception atmamız gerekirse, atılacak exception buolur
     @Bean
     public AuthenticationEntryPoint authenticationEntryPoint() {
         return (request, response, authException) -> {
@@ -77,6 +77,7 @@ public class SecurityConfig {
         http.cors(cors -> cors.configurationSource(request -> {
             var corsConfig = new org.springframework.web.cors.CorsConfiguration();
             corsConfig.addAllowedOrigin("http://localhost:5173");
+            corsConfig.addAllowedOrigin("https://todo-backend-production-ba85.up.railway.app");
             corsConfig.addAllowedMethod("*");
             corsConfig.addAllowedHeader("*");
             corsConfig.setAllowCredentials(true);
