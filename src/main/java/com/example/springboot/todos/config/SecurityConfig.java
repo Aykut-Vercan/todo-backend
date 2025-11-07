@@ -79,6 +79,7 @@ public class SecurityConfig {
             corsConfig.addAllowedOrigin("http://localhost:5173");
             corsConfig.addAllowedOrigin("https://todo-backend-production-ba85.up.railway.app");
             corsConfig.addAllowedOrigin("https://todo-frontend-topaz-iota.vercel.app");
+            corsConfig.addAllowedOrigin("https://todo-frontend-ij87imuxp-aykuts-projects-39460c32.vercel.app");
             corsConfig.addAllowedMethod("*");
             corsConfig.addAllowedHeader("*");
             corsConfig.setAllowCredentials(true);
