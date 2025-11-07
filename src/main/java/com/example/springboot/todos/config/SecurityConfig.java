@@ -78,6 +78,7 @@ public class SecurityConfig {
             var corsConfig = new org.springframework.web.cors.CorsConfiguration();
             corsConfig.addAllowedOrigin("http://localhost:5173");
             corsConfig.addAllowedOrigin("https://todo-backend-production-ba85.up.railway.app");
+            corsConfig.addAllowedOrigin("https://todo-frontend-topaz-iota.vercel.app");
             corsConfig.addAllowedMethod("*");
             corsConfig.addAllowedHeader("*");
             corsConfig.setAllowCredentials(true);
@@ -85,7 +86,6 @@ public class SecurityConfig {
         }));
 
         http.csrf(csrf -> csrf.disable());
-
 
         http.exceptionHandling(exceptionHandling ->
                 exceptionHandling
