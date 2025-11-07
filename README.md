@@ -16,7 +16,7 @@ You can sign up with any email. No verification needed to log in.
 
 ##  Tech Stack
 
-- **Java 17**
+- **Java 21**
 - **Spring Boot 3**
 - **Spring Security (JWT)**
 - **Spring Data JPA (Hibernate)**
