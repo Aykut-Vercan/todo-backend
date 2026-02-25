@@ -10,7 +10,7 @@ The backend is deployed on **Railway** and designed to work seamlessly with the 
 
 You can view the live application here:  
 👉 **[Todo App Frontend (Vercel)](https://todo-frontend-topaz-iota.vercel.app/register)**
-You can sign up with any email. No verification needed to log in.
+You can sign up with any email. No verification needed to log in.(The RailwayApp trial period has expired, so login requests will currently result in an error.)
 
 ---
 
